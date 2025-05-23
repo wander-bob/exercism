@@ -1,5 +1,6 @@
-import { reorder } from './elyse-transformative-enchantments/index.js'
+import { niceToMeetYou } from "./regular-chatbot/index.js";
 
-const deck = [10, 1, 5, 3, 2];
-const result = reorder(deck);
-console.log(result)
+const content = 'Smith, John';
+const result = niceToMeetYou(content);
+
+console.log(result);
