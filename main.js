@@ -1,6 +1,18 @@
-import { niceToMeetYou } from "./regular-chatbot/index.js";
+import {
+  getListOfWagons,
+  fixListOfWagons,
+  correctListOfWagons,
+  extendRouteInformation,
+  separateTimeOfArrival
+} from "./train-driver/index.js";
 
-const content = 'Smith, John';
-const result = niceToMeetYou(content);
+let routeInformation = {
+  from: 'Berlin',
+  to: 'Hamburg',
+  length: '100',
+  timeOfArrival: '10:10',
+};
+
+const result = separateTimeOfArrival(routeInformation);
 
 console.log(result);
